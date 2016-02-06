@@ -7,10 +7,10 @@ This is an introduction to python programming. This program has been created to 
 
 The following concepts were learned:
 
-> How to print to the screen,
-> The types of variables that exist and how to use them,
-> How to receive input from a user and assign it to a variable,
-> Mathematical calculations in python
-> Formatting floating numbers to get a particular output.
+*How to print to the screen,
+*The types of variables that exist and how to use them,
+*How to receive input from a user and assign it to a variable,
+*Mathematical calculations in python
+*Formatting floating numbers to get a particular output.
 
 
