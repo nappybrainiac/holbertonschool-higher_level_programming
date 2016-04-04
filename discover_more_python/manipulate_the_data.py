@@ -1,4 +1,5 @@
-# This python script takes the information from a URL and writes it to a file in /tmp
+# This python script takes the information from GitHub's top python projects
+# and displays the project's full name.
 
 import json
 import urllib
