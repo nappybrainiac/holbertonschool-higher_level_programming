@@ -2,8 +2,7 @@
 Project:            Basic OOP with Python
 Dependent files:    3-main.py
 
-The function in this file computes the fibonacci number of
-a given number. In this method, recursion has been used.
+The class in this file describes a circle and its attributes.
 
 Gloria Bwandungi, 2016.
 '''
