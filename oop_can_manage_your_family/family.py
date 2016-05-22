@@ -25,16 +25,16 @@ class Person(object):
         if type(id) is not int or id < 0:
             raise Exception("id is not an integer")
         self.__id = id
-        if type(first_name) is not str or (first_name == ""):
+        if type(first_name) is not str or first_name == "":
             raise Exception("first_name is not a string")
         self.__first_name = first_name
 
 
         if len(date_of_birth) !=3 :
             raise Exception("date_of_birth is not a valid date")
-        if(date_of_birth[0] > 12 or date_of_birth[0] < 1 ):
+        if date_of_birth[0] > 12 or date_of_birth[0] < 1:
             raise Exception("date_of_birth is not a valid date")
-        if(date_of_birth[1] > 31 or date_of_birth[1] < 1):
+        if date_of_birth[1] > 31 or date_of_birth[1] < 1 :
             if date_of_birth[0] == 2 and date_of_birth[1] > 28:
                 raise Exception("date_of_birth is not a valid date")
             raise Exception("date_of_birth is not a valid date")
@@ -47,8 +47,9 @@ class Person(object):
             raise Exception("eyes_color is not valid")
         self.__eyes_color = eyes_color
 
+
     ''' Getters '''
-    def get_id(id):
+    def get_id(self):
         return self.__id
 
     def get_first_name(self):
