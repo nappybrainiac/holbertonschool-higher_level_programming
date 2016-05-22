@@ -48,6 +48,7 @@ class Person(object):
         self.__eyes_color = eyes_color
 
 
+
     ''' Getters '''
     def get_id(self):
         return self.__id
@@ -63,3 +64,42 @@ class Person(object):
 
     def get_genre(self):
         return self.__genre
+
+    def __str__(self):
+        
+        ''' Returns full name '''
+        return str(self.__first_name  + " " + self.last_name)
+
+    def is_male(self):
+        if Person.GENRES == "male":
+            return True
+
+    def age(self):
+        date = [05, 20, 2016]
+
+        if self.__date_of_birth[0] >= date[0]:
+            if self.__date_of_birth[1] > date[1]:
+                age = (date[2] - 1) - self.__date_of_birth[2]
+        else:
+            age = date[2] - self.__date_of_birth[2]
+        return age
+
+    ''' Overloading Methods '''
+
+    def __lt__(self,other):
+        return self.age() < other.age()
+
+    def __le__(self,other):
+        return self.age() <= other.age()
+
+    def __gt__(self,other):
+        return self.age() > other.age()
+
+    def __ge__(self,other):
+        return self.age() >= other.age()
+
+    def __eq__(self,other):
+        return self.age() == other.age()
+
+    def __ne__(self,other):
+        return self.age() != other.age()
