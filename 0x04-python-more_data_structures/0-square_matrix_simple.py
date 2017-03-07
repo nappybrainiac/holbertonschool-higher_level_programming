@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    return [list(map(lambda n: n**2, sublist)) for sublist in matrix]
+    return [[num**2 for num in elem] for elem in matrix]
