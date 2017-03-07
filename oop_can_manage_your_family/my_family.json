@@ -1,0 +1,24 @@
+[
+   {
+      "first_name":"Sandra",
+      "eyes_color":"Brown",
+      "date_of_birth":[
+         1,
+         1,
+         2010
+      ],
+      "genre":"Female",
+      "id":3
+   },
+   {
+      "first_name":"Sandra",
+      "eyes_color":"Brown",
+      "date_of_birth":[
+         1,
+         1,
+         2010
+      ],
+      "genre":"Female",
+      "id":7
+   }
+]
