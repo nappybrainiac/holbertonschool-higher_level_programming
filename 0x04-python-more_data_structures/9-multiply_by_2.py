@@ -4,6 +4,6 @@ def multiply_by_2(my_dict):
         return None
     else:
         new_dict = my_dict.copy()
-        for value in new_dict:
-            value *= 2
+        for k, v in my_dict.items():
+            new_dict[k] = v * 2
     return new_dict
