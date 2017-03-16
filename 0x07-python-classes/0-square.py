@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-
 """
-This is an empty class that defines a square
+This file contains only one class.
 """
 
 class Square:
-    """This is the Square class."""
+    """
+    This is the Square class.
+    """
     pass
