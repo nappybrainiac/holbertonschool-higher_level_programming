@@ -5,6 +5,6 @@ This file contains only one class.
 
 class Square:
     """
-    This is the Square class.
+    This is class defines a Square.
     """
     pass
