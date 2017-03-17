@@ -2,6 +2,8 @@
 """
 This file contains one class Square
 """
+
+
 class Square:
     """
     This class defines a square that allows for intantiation
