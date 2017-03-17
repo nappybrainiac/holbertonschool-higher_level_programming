@@ -1,0 +1,44 @@
+The ``4-square`` module
+============================
+
+Using ``Square``
+---------------------
+
+This is an example text file in reStructuredText format.  First import
+``Square`` from the ``4-square`` module:
+	   >>> Square = __import__('4-square').Square
+
+Using it correctly:
+-------------------
+    >>> sq1 = Square()
+
+    >>> sq1 = Square(3)
+    >>> sq1.size
+    3
+
+    >>> sq1.area()
+    9
+
+
+Generating Errors:
+------------------
+    >>> sq2 = Square("size")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> sq2 = Square(-2)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+    >>> sq2 = Square(2.5)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+
+Check documentation:
+--------------------
+    >>> print(len(__import__("4-square").__doc__) > 0)
+    True
+
+    >>> print(len(__import__("4-square").Square.__doc__) > 0)
+    True
