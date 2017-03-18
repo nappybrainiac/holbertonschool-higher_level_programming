@@ -10,7 +10,7 @@ class Square:
     with a particular size.
     """
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """ Initialization function"""
         self.__size = size
         self.__position = position
@@ -52,7 +52,6 @@ class Square:
         for j in range(length):
             """Print the spaces to position lines in x-axis"""
             print((" " * self.__position[0]) + ("#" * length))
-            #print("#" * length)
 
     @property
     def position(self):
