@@ -30,7 +30,6 @@ class Square:
         self.__size = size
         self.__position = position
 
-
     @property
     def size(self):
         """To get the size (a getter)"""
