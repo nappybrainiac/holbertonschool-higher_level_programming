@@ -48,7 +48,6 @@ class Square:
         """Print the spaces for the y-axis first"""
         for i in range(self.__position[1]):
             print("")
-            
         for j in range(length):
             """Print the spaces to position lines in x-axis"""
             print((" " * self.__position[0]) + ("#" * length))
