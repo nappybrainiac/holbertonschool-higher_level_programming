@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-This file contains a class, Rectangle, that defines an instance of a rectangle using width and height.
+This file contains a class, Rectangle, that defines an 
+instance of a rectangle using width and height.
 """
 
 
@@ -9,7 +10,7 @@ class Rectangle:
     This class defines a rectangle instance.
     """
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if type(height) is not int:
