@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-'''Rectangle class, to defines an instance of a rectangle.'''
+'''
+This file contains a class, Rectangle, that defines an
+instance of a rectangle using width and height.
+'''
 
 
 class Rectangle:
@@ -16,7 +19,7 @@ class Rectangle:
     @property
     def width(self):
         '''width getter'''
-        return self.__width
+        return (self.__width)
 
     @width.setter
     def width(self, value):
@@ -31,7 +34,7 @@ class Rectangle:
     @property
     def height(self):
         '''height getter'''
-        return self.__height
+        return (self.__height)
 
     @height.setter
     def height(self, value):
@@ -45,26 +48,26 @@ class Rectangle:
 
     def area(self):
         '''returns the rectangle's area'''
-        return self.__width * self.__height
+        return (self.__width * self.__height)
 
     def perimeter(self):
         '''returns the rectangle's perimeter'''
         if self.__width == 0 or self.__height == 0:
             return 0
-        return (self.__width * 2) + (self.__height * 2)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         '''to print #/'s that represent the rectangle'''
         if self.__width == 0 or self.__height == 0:
-            return ""
+            return ("")
         rect = ""
         for i in range(self.__height):
             rect += ("#" * self.__width) + "\n"
-        return rect.rstrip()
+        return (rect.rstrip())
 
     def __repr__(self):
         '''to stringify #/'s that represent the rectangle'''
-        return "Rectangle(%s, %s)" % (str(self.__width), str(self.__height))
+        return ("Rectangle(%s, %s)" % (str(self.__width), str(self.__height)))
 
     def __del__(self):
         '''to delete the instance'''
