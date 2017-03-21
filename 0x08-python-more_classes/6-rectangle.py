@@ -62,7 +62,7 @@ class Rectangle:
         return rect.rstrip()
 
     def __repr__(self):
-        return ("Rectangle(%s, %s)" % (str(self.__width), str(self.__height)))
+        return "Rectangle(%s, %s)" % (str(self.__width), str(self.__height))
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
