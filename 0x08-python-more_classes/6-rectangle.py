@@ -8,17 +8,19 @@ class Rectangle:
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
+        '''initialization'''
         self.height = height
         self.width = width
         Rectangle.number_of_instances += 1
 
     @property
     def width(self):
+        '''width getter'''
         return self.__width
 
     @width.setter
     def width(self, value):
-        '''making sure the width is a positive integer'''
+        '''width setter'''
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -28,6 +30,7 @@ class Rectangle:
 
     @property
     def height(self):
+        '''height getter'''
         return self.__height
 
     @height.setter
@@ -41,14 +44,17 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        '''returns the rectangle's area'''
         return self.__width * self.__height
 
     def perimeter(self):
+        '''returns the rectangle's perimeter'''
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
+        '''to print #/'s that represent the rectangle'''
         if self.__width == 0 or self.__height == 0:
             return ""
         rect = ""
@@ -57,8 +63,10 @@ class Rectangle:
         return rect.rstrip()
 
     def __repr__(self):
+        '''to stringify #/'s that represent the rectangle'''
         return "Rectangle(%s, %s)" % (str(self.__width), str(self.__height))
 
     def __del__(self):
+        '''to delete the instance'''
         Rectangle.number_of_instances -= 1
         print ("Bye rectangle...")
