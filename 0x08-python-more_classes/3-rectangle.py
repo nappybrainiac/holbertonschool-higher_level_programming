@@ -10,11 +10,6 @@ class Rectangle:
     This class defines a rectangle instance.
     """
 
-    w_int = "width must be an integer"
-    w_pos = "width must be >= 0"
-    h_int = "height must be an integer"
-    h_pos = "height must be >= 0"
-
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
@@ -27,9 +22,9 @@ class Rectangle:
     def width(self, value):
         """making sure the width is a positive integer"""
         if type(value) is not int:
-            raise TypeError(w_int)
+            raise TypeError("width must be an integer")
         elif value < 0:
-            raise ValueError(w_pos)
+            raise ValueError("width must be >= 0")
         else:
             self.__width = value
 
@@ -41,9 +36,9 @@ class Rectangle:
     def height(self, value):
         """making sure the height is a positive integer"""
         if type(value) is not int:
-            raise TypeError(h_int)
+            raise TypeError("height must be an integer")
         elif value < 0:
-            raise ValueError(h_pos)
+            raise ValueError("height must be >= 0")
         else:
             self.__height = value
 
