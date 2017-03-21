@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""
+'''
 Rectangle class, to defines an instance of a rectangle.
-"""
+'''
 
 
 class Rectangle:
-    """
+    '''
     This class defines a rectangle instance.
-    """
+    '''
 
     number_of_instances = 0
 
@@ -22,7 +22,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """making sure the width is a positive integer"""
+        '''making sure the width is a positive integer'''
         if type(value) is not int:
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -36,7 +36,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """making sure the height is a positive integer"""
+        '''making sure the height is a positive integer'''
         if type(value) is not int:
             raise TypeError("height must be an integer")
         elif value < 0:
