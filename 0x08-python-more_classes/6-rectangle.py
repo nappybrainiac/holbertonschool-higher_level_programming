@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-This file contains a class, Rectangle, that defines an
-instance of a rectangle using width and height.
+Rectangle class, to defines an instance of a rectangle.
 """
 
 
