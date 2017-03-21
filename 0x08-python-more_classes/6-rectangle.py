@@ -5,9 +5,7 @@ Rectangle class, to defines an instance of a rectangle.
 
 
 class Rectangle:
-    '''
-    This class defines a rectangle instance.
-    '''
+    '''This class defines a rectangle instance.'''
 
     number_of_instances = 0
 
