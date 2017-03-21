@@ -14,7 +14,6 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
-        """to increase the number of instances"""
         Rectangle.number_of_instances += 1
 
     @property
@@ -65,6 +64,5 @@ class Rectangle:
         return ("Rectangle(%s, %s)" % (str(self.__width), str(self.__height)))
 
     def __del__(self):
-        """to reduce the number of instances"""
         Rectangle.number_of_instances -= 1
         print ("Bye rectangle...")
