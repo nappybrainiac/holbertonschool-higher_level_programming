@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-'''
-Rectangle class, to defines an instance of a rectangle.
-'''
+'''Rectangle class, to defines an instance of a rectangle.'''
 
 
 class Rectangle:
