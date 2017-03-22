@@ -59,8 +59,7 @@ class Rectangle:
         '''comparing two rectangles'''
         if isinstance(rect_1, Rectangle):
             if isinstance(rect_2, Rectangle):
-                if (rect_1.__width * rect_1.__height) > \
-                 (rect_2.__width * rect_2.__height):
+                if rect_1.area() >= rect_2.area():
                     return rect_1
                 else:
                     return rect_2
