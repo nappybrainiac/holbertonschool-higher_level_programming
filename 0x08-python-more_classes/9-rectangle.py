@@ -69,10 +69,6 @@ class Rectangle:
         else:
             raise TypeError("rect_1 must be an instance of Rectangle")
 
-    @classmethod
-    def square(cls, size=0):
-        return Rectangle(size, size)
-
     def __str__(self):
         '''to print #/'s that represent the rectangle'''
         if self.__width == 0 or self.__height == 0:
@@ -90,3 +86,7 @@ class Rectangle:
         '''to delete the instance'''
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
+
+    @classmethod
+    def square(cls, size=0):
+        return (Rectangle(size, size))
