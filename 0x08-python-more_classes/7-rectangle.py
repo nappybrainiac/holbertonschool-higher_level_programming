@@ -55,6 +55,18 @@ class Rectangle:
             return 0
         return ((self.__width * 2) + (self.__height * 2))
 
+    def bigger_or_equal(self, rect_1, rect_2):
+        if isinstance(rect_1, Rectangle):
+            if isinstance(rect_2, Rectangle):
+                if area(rect_1) > area(rect_2):
+                    return rect_1
+                else:
+                    return rect_2
+            else:
+                raise TypeError("rect_2 must be an instance of Rectangle")
+        else:
+            raise TypeError("rect_1 must be an instance of Rectangle")
+
     def __str__(self):
         '''to print #/'s that represent the rectangle'''
         if self.__width == 0 or self.__height == 0:

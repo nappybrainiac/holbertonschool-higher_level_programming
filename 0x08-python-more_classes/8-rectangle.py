@@ -55,6 +55,7 @@ class Rectangle:
             return 0
         return ((self.__width * 2) + (self.__height * 2))
 
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         '''comparing two rectangles'''
         if isinstance(rect_1, Rectangle):

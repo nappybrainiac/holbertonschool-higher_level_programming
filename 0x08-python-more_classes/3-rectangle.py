@@ -56,4 +56,5 @@ class Rectangle:
         rect = ""
         for i in range(self.__height):
             rect += ("#" * self.__width) + "\n"
+        """To remove the trailing \n"""
         return rect.rstrip()
