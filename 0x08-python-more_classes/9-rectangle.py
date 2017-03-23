@@ -70,6 +70,7 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
 
     @classmethod
+    '''returns a rectangle that is a square'''
     def square(cls, size=0):
         return (Rectangle(size, size))
 
