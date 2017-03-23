@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 '''Rectangle - that defines an
-instance of a rectangle using width and height.'''
+instance of a rectangle using width and height.
+
+'''
 
 
 class Rectangle:
@@ -90,4 +92,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         '''returns a rectangle that is a square'''
-        return (Rectangle(size, size))
+        return (cls(size, size))
