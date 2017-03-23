@@ -88,7 +88,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         '''returns a rectangle that is a square'''
-        return Rectangle(size, size)
+        return (Rectangle(size, size))
 
     def area(self):
         '''returns the rectangle's area'''
