@@ -26,9 +26,7 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         '''returns a rectangle that is a square'''
-        cls.__width = size
-        cls.__height = size
-        return Rectangle(cls.__width, cls.__height)
+        return Rectangle(size, size)
 
     @property
     def width(self):
