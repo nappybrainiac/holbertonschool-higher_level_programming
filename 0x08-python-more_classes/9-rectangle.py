@@ -23,6 +23,13 @@ class Rectangle:
         self.width = width
         type(self).number_of_instances += 1
 
+    @classmethod
+    def square(cls, size=0):
+        '''returns a rectangle that is a square'''
+        cls.__width = size
+        cls.__height = size
+        return Rectangle(cls.__width, cls.__height)
+
     @property
     def width(self):
         '''width getter'''
@@ -94,10 +101,3 @@ class Rectangle:
         '''to delete the instance'''
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-
-    @classmethod
-    def square(cls, size=0):
-        '''returns a rectangle that is a square'''
-        cls.__width = size
-        cls.__height = size
-        return Rectangle(cls.__width, cls.__height)
