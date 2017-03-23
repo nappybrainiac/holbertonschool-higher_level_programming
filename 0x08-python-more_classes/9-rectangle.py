@@ -2,7 +2,13 @@
 '''Rectangle - that defines an
 instance of a rectangle using width and height.
 
-'''
+area() - calculates the area,
+perimeter() - calculates the perimeter,
+bigger_or_equal() - compares the area of two rectangles,
+square() - returns a rectangle that is a square,
+__str__() - represents rectangle using #,
+__repr__() - stringify's the rectangle's representation,
+__del__() - deletes an instance of rectangle.'''
 
 
 class Rectangle:
@@ -92,4 +98,4 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         '''returns a rectangle that is a square'''
-        return (cls(size, size))
+        return (Rectangle(size, size))
