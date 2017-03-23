@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+'''Rectangle - that defines an
+instance of a rectangle using width and height.'''
+
+
 class Rectangle():
     '''class Rectangle - Parameters(width(int), height(int))'''
 
