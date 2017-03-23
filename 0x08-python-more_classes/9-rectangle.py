@@ -28,6 +28,16 @@ class Rectangle:
         '''returns a rectangle that is a square'''
         return Rectangle(size, size)
 
+    def area(self):
+        '''returns the rectangle's area'''
+        return (self.__width * self.__height)
+
+    def perimeter(self):
+        '''returns the rectangle's perimeter'''
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return ((self.__width * 2) + (self.__height * 2))
+
     @property
     def width(self):
         '''width getter'''
@@ -57,16 +67,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-
-    def area(self):
-        '''returns the rectangle's area'''
-        return (self.__width * self.__height)
-
-    def perimeter(self):
-        '''returns the rectangle's perimeter'''
-        if self.__width == 0 or self.__height == 0:
-            return 0
-        return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
