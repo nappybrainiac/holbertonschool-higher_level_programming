@@ -53,7 +53,7 @@ class Rectangle:
         '''returns the rectangle's perimeter'''
         if self.__width == 0 or self.__height == 0:
             return 0
-        return ((self.__width * 2 + self.__height) * 2)
+        return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
@@ -68,11 +68,6 @@ class Rectangle:
                 raise TypeError("rect_2 must be an instance of Rectangle")
         else:
             raise TypeError("rect_1 must be an instance of Rectangle")
-
-    @classmethod
-    '''returns a rectangle that is a square'''
-    def square(cls, size=0):
-        return (Rectangle(size, size))
 
     def __str__(self):
         '''to print #/'s that represent the rectangle'''
@@ -91,3 +86,8 @@ class Rectangle:
         '''to delete the instance'''
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
+
+    @classmethod
+    def square(cls, size=0):
+        '''returns a rectangle that is a square'''
+        return (Rectangle(size, size))
