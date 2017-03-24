@@ -18,9 +18,9 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        '''initialization'''
-        self.height = height
+        ''' Constructor '''
         self.width = width
+        self.height = height
         type(self).number_of_instances += 1
 
     @property
